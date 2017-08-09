@@ -1,4 +1,4 @@
-package com.neudesic.rubicon.demo;
+package com.beam.pubsub.gcs.demo;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

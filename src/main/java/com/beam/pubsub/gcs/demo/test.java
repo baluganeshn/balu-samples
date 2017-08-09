@@ -1,4 +1,4 @@
-package com.neudesic.rubicon.demo;
+package com.beam.pubsub.gcs.demo;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormatter;
