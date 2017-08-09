@@ -85,7 +85,7 @@ public class ProcessPubSubToGcsPipepline {
 
     private static final String CONSTANT_KEY = "constant";
 
-	private static final String CLOUD_PROJECT_ID = "disco-ethos-176110";
+	private static final String CLOUD_PROJECT_ID = "projectId";
 
 	private static final String CLOUD_PUB_SUB_TOPIC = "gs://pubsubdataflow/topicfile";
 
@@ -98,7 +98,7 @@ public class ProcessPubSubToGcsPipepline {
 
     public static final int MAX_EVENTS_IN_FILE = 100;
 
-    public static final String PUBSUB_SUBSCRIPTION = "/topics/disco-ethos-176110/neudesicDemo";
+    public static final String PUBSUB_SUBSCRIPTION = "/topics/projectId/pubSubDemo";
 
 
     public static void main(String[] args) {

@@ -74,13 +74,13 @@ public class AVROSubscriber {
 		// Enforce that this pipeline is always run in streaming mode.
 		((DataflowPipelineOptions) options).setStreaming(true);
 		((DataflowPipelineOptions) options).setJobName("AVROSubscriber");
-		((DataflowPipelineOptions) options).setProject("cloudmigrator-171510");
-		((DataflowPipelineOptions) options).setStagingLocation("gs://cloudmigratordataflow/pubsubstaging");
+		((DataflowPipelineOptions) options).setProject("projectid");
+		((DataflowPipelineOptions) options).setStagingLocation("gs://gcs/pubsubstaging");
 		((DataflowPipelineOptions) options).setRunner(DataflowRunner.class);
 
 		Pipeline pipeline = Pipeline.create(options);
 		PCollection<String> details = pipeline
-				.apply(PubsubIO.readStrings().fromTopic("/topics/cloudmigrator-171510/sampleTopic"));
+				.apply(PubsubIO.readStrings().fromTopic("/topics/projectId/sampleTopic"));
 
 		// PCollection<String> details =
 		// pipeline.apply(PubsubIO.Read.topic("/topics/cloudmigrator-171510/sampleTopic"));
